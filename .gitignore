@@ -1,32 +1,25 @@
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# 1. Ignorar todo por defecto en el repositorio.
+*
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# 2. Crear excepciones. NO ignorar el propio .gitignore.
+!.gitignore
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# 3. NO ignorar la estructura de directorios que lleva a tus clases de producción.
+#    REEMPLAZA 'tu/paquete/aqui/' CON TU RUTA REAL.
+!/src/
+!/src/main/
+!/src/main/java/
+!/src/main/java/Exceptions/
+!/src/main/java/model/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# 4. NO ignorar la estructura de directorios que lleva a tus clases de test.
+#    REEMPLAZA 'tu/paquete/aqui/' CON TU RUTA REAL.
+!/src/test/
+!/src/test/java/
+!/src/test/java/model/
 
-### VS Code ###
-.vscode/
+# 5. Finalmente, NO ignorar los archivos específicos que quieres subir.
+#    Asegúrate de que la ruta coincida con la de arriba.
+!/src/main/java/model/Person.java
+!/src/main/java/Exceptions/ExceptionsPerson.java
+!/src/test/java/model/TestPerson.java
