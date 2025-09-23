@@ -1,6 +1,7 @@
 package model;
 
-import Exceptions.ExceptionsPerson;
+import Persona.Exceptions.ExceptionsPerson;
+import Persona.model.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

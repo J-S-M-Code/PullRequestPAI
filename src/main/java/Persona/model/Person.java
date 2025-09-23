@@ -1,7 +1,6 @@
-package model;
+package Persona.model;
 
-import Exceptions.ExceptionsPerson;
-import org.springframework.cglib.core.Local;
+import Persona.Exceptions.ExceptionsPerson;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -84,6 +83,10 @@ public class Person {
         } else {
             return "No es adulto";
         }
+    }
+
+    public String formatDocuement(String document){
+        return  this.document.replace(".", "");
     }
 
 }

@@ -9,8 +9,8 @@
 !/src/
 !/src/main/
 !/src/main/java/
-!/src/main/java/Exceptions/
-!/src/main/java/model/
+!/src/main/java/Persona/
+!/src/main/java/Persona/model/
 
 # 4. NO ignorar la estructura de directorios que lleva a tus clases de test.
 #    REEMPLAZA 'tu/paquete/aqui/' CON TU RUTA REAL.
@@ -20,6 +20,6 @@
 
 # 5. Finalmente, NO ignorar los archivos específicos que quieres subir.
 #    Asegúrate de que la ruta coincida con la de arriba.
-!/src/main/java/model/Person.java
-!/src/main/java/Exceptions/ExceptionsPerson.java
+!/src/main/java/Persona/model/Person.java
+!/src/main/java/Persona/ExceptionsPerson.java
 !/src/test/java/model/TestPerson.java
