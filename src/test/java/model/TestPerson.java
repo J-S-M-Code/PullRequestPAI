@@ -143,11 +143,20 @@ public class TestPerson {
     }
 
     @Test
-    public void person_is_adult(){
+    public void person_is_adult() {
         Person person = new Person("Juan", "Perez",
                 LocalDate.of(2000, 1, 1),
                 "12.121.121", 180, 80);
 
-        Assertions.assertEquals("Es adulto", person.getAdult());
+        Assertions.assertTrue(person.getIsAdult());
+    }
+
+    @Test
+    public void person_is_not_adult() {
+        Person person = new Person("Juan", "Perez",
+                LocalDate.of(2020, 1, 1),
+                "12.121.121", 180, 80);
+
+        Assertions.assertFalse(person.getIsAdult());
     }
 }

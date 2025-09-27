@@ -1,7 +1,7 @@
 package model;
 
 import Persona.Exceptions.ExceptionsPerson;
-import Persona.Output.PersonByDocument;
+import Persona.Output.PersonByDocumentRepo;
 import Persona.UseCase.GetPersonByDocumentUseCase;
 import Persona.model.Person;
 import org.junit.jupiter.api.Assertions;
@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 public class PersonByDocumentTest {
     @Mock
-    PersonByDocument repo;
+    PersonByDocumentRepo repo;
     @InjectMocks
     GetPersonByDocumentUseCase useCase;
 

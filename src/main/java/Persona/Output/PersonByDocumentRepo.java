@@ -2,6 +2,6 @@ package Persona.Output;
 
 import Persona.model.Person;
 
-public interface PersonByDocument {
+public interface PersonByDocumentRepo {
     Person getPerson(String document);
 }

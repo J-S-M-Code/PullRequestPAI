@@ -2,14 +2,14 @@ package Persona.UseCase;
 
 import Persona.Exceptions.ExceptionsPerson;
 import Persona.Input.PersonByDocumentInput;
-import Persona.Output.PersonByDocument;
+import Persona.Output.PersonByDocumentRepo;
 import Persona.model.Person;
 
 public class GetPersonByDocumentUseCase implements PersonByDocumentInput {
 
-    private PersonByDocument personByDocument;
+    private PersonByDocumentRepo personByDocument;
 
-    public GetPersonByDocumentUseCase(PersonByDocument repo){
+    public GetPersonByDocumentUseCase(PersonByDocumentRepo repo){
         this.personByDocument = repo;
     }
 

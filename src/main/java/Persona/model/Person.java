@@ -76,13 +76,10 @@ public class Person {
         return period.getYears();
     }
 
-    public String getAdult() {
+    public boolean getIsAdult() {
         int age = getAge();
-        if (age > 18){
-            return "Es adulto";
-        } else {
-            return "No es adulto";
-        }
+        return age > 18;
+
     }
 
     public String formatDocuement(String document){
